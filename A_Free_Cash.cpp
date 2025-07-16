@@ -8,6 +8,7 @@ using namespace std;
 int arr[24][60];
 int main()
 {
+    op();
     int t;
     cin >> t;
     int n = t;
