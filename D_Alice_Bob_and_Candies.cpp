@@ -32,7 +32,7 @@ int main()
         int turn = 0;
         while (v.size() > 0)
         {
-             if (turn == 0)
+            if (turn == 0)
             {
                 while (v.size() > 0 && bob <= alice)
                 {
@@ -56,10 +56,7 @@ int main()
                 bob = 0;
                 move++;
             }
-
-           
         }
-        cout<< move << " " << alice_total << " "<< bob_total << endl;
-        
+        cout << move << " " << alice_total << " " << bob_total << endl;
     }
 }
