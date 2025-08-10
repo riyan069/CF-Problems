@@ -13,18 +13,19 @@ int main()
     {
         int x;
         cin >> x;
-        
-        string a,b;
-        cin>> a >> b;
+
+        string a, b;
+        cin >> a >> b;
         int r1 = 0, r2 = 0;
+        int ok = 0;
         for (int i = 0; i < x; i++)
         {
-            if(a[i] == 'R')r1++;
-            if(b[i] == 'R') r2++;
+            if ((a[i] == 'R') != (b[i] == 'R'))
+            {
+                ok = 1;
+                break;
+            }
         }
-        
-        if(r1 == r2) cout << "YES" << endl;
-        else cout << "NO" << endl;
-        
+        cout << (ok == 0 ? "YES\n" : "NO\n");
     }
 }
