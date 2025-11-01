@@ -1,2 +1,13 @@
+# Ignore executables
 *.exe
+*.out
+
+# Ignore temp or debug files
+*.log
+*.obj
+*.o
+
+# Ignore backup and system files
+*~
+.DS_Store
 
